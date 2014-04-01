@@ -3,13 +3,22 @@ SparkCore-FacebookLikesAlert
 
 Spark Maker Kit - Facebook Likes Alert for the Spark Core.
 
+So your Spark Core is sitting around being lazy? Give your *Core* a workout with this One-Finger Pushup Facebook Likes Alert project.
+
+It's easy to implement a TCP Client with your Spark Core and do something useful and cool like monitor your favorite Facebook page and display the current number of Likes in an interesting way!
+
 [Watch the short Youtube action video](https://www.youtube.com/watch?v=VVEwlagTNzU)
 
 ---
 
 ###Build It!###
 
-Print out the two PDFs from the artwork folder and cut out with an exacto knife.
+Print out the two PDFs and cut out with an exacto knife.
+
+[facebook-likes-alert-guage.pdf](https://github.com/technobly/SparkCore-FacebookLikesAlert/blob/master/artwork/facebook-likes-alert-guage.pdf?raw=true)
+
+[one-finger-pushup-guy.pdf](https://github.com/technobly/SparkCore-FacebookLikesAlert/blob/master/artwork/one-finger-pushup-guy.pdf?raw=true)
+
 ![01](http://i.imgur.com/DQArbGL.jpg)
 
 ![02](http://i.imgur.com/VEDbP9d.jpg)
@@ -88,7 +97,7 @@ Congrats! You made it :D  Go crack a cold one and celebrate.
 ###Calibration!###
 The first code you're going to need to run is the calibration code.  This just tries to give you a good idea of where your servo is pointing based on degrees.  By default it's mapped for you already to values that should be somewhat close.  Run the code with your serial terminal closed, after the core boots open your serial terminal and press ENTER.  Your guy should come to life and start walking from 0 to 9 every second.  If he's a little too far to the left of 0, adjust the ``SERVO_DEG_0`` value up a bit, or down a bit if too far to the right of 0.  Do the same for digit 9.  Once you are happy with these values, you can copy them into your main application.
 
-Grab the RAW version of calibration.cpp and paste into your web IDE as a new application:
+Grab the [RAW version of calibration.cpp](https://raw.githubusercontent.com/technobly/SparkCore-FacebookLikesAlert/master/calibration.cpp) and paste into your web IDE as a new application:
 
 ![image](http://i.imgur.com/bHJjnJ0.png)
 
@@ -101,7 +110,7 @@ If you are building locally, place the file here:
 ---
 
 ###Run the Facebook Likes Alert!###
-Grab the RAW version of application.cpp and paste into your web IDE as a new application. Copy your calibration values to ``SERVO_DEG_0`` and ``SERVO_DEG_9`` in your application.
+Grab the [RAW version of application.cpp](https://raw.githubusercontent.com/technobly/SparkCore-FacebookLikesAlert/master/application.cpp) and paste into your web IDE as a new application. Copy your calibration values to ``SERVO_DEG_0`` and ``SERVO_DEG_9`` in your application.
 
 ![image](http://i.imgur.com/gR0jwML.png)
 
